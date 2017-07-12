@@ -6,6 +6,7 @@ import Dashboard from 'views/Dashboard';
 import About from 'views/About';
 import NotFound from 'views/NotFound';
 import Menu from 'components/Global/Menu';
+import Search from 'components/Global/Search'
 
 const publicPath = '/';
 
@@ -24,6 +25,7 @@ export default class App extends Component {
       <BrowserRouter>
         <div className='App'>
           <Menu />
+          <Search />
           <div className='Page'>
             <Switch>
               <Route exact path={ publicPath } component={ Dashboard } />
