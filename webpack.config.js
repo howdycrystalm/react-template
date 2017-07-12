@@ -1,24 +1,25 @@
-var path = require('path');
+const path = require('path');
 
-var webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: './index.html',
+  filename: 'index.html',
+  inject: 'body'
+})
 
 module.exports = {
-    entry: path.resolve(__dirname, 'js/index.js'),
-    output: {
-        path: path.resolve(__dirname, 'build/js'),
-        filename: 'index.js',
-    },
-    devtool: 'inline-source-map',
-    module: {
-      loaders: [
-        {
-          test: /\.js$/,
-          exclude: /(node_modules)/,
-          loader: 'babel-loader',
-          options: {
-            presets: ['react', 'es2015']
-          }
-        },
-      ]
-    }
-};
+  entry: path.resolve(__dirname, 'js/index.js'),
+  output: {
+    path: path.resolve(__dirname, 'build/js'),
+    filename: 'index.js'
+  },
+  module: {
+    loaders: [
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+    ]
+  },
+  plugins: [HtmlWebpackPluginConfig]
+}
+
+

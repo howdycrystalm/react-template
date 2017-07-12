@@ -4,8 +4,8 @@
   "description": "a template for ccc frontend",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build; node server/index.js",
-    "start-dev": "nodemon server/index.js",
+    "start": "webpack-dev-server",
+    "start-dev": "nodemon js/index.js",
     "build": "webpack -p",
     "build-dev": "webpack -w",
     "build-sass": "node-sass -w ./client/styles/main.scss -o ./client/styles/mainSheet",
@@ -31,10 +31,11 @@
     "webpack-livereload-plugin": "^0.11.0"
   },
   "devDependencies": {
-    "webpack": "^3.2.0",
     "chai": "^3.5.0",
     "cross-env": "^3.1.4",
+    "html-webpack-plugin": "^2.29.0",
     "mocha": "^3.1.2",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "webpack": "^3.2.0"
   }
 }
