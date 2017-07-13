@@ -9,7 +9,7 @@ React and Redux, Webpack 2 boilerplate from [Work & Co](https://work.co). To lea
 
 1. clone the project to your local computer
 ```
-$ git clone 
+$ git clone <https://github.com/taypsl/react-template.git>
 ```
 
 2. create a new branch for the feature you will be working on
@@ -19,13 +19,13 @@ $ git checkout -b <feature-branch> // be specific in your naming, e.g. "portal-f
 
 3. push your code to your feature branch
 ```
-$ git push -u origin <feature-branch> //  from here, git commit and push as you will
+$ git push -u origin <feature-branch> //  from here, git commit and push to your feature branch 	as you will
 ```
 
-4. from your github GUI create a pull request on your branch asking to merge <feature> into <master>
+4. from your github GUI create a pull request on your branch asking to merge ```<feature>``` into ```<master>```
 
 
-For more information about Feature Branch Workflow, see this [guide](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
+<b>For more information about Feature Branch Workflow, see this [guide](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).</b>
 
 
 ## TODO
