@@ -6,8 +6,8 @@ export default class Courthouse extends Component {
       <div className='Courthouse'>
         <h1>Find a Courthouse</h1>
         <p>Locate a courthouse near you.</p>
-        <h3>Which court location should I file my case?</h3>
-        <p>Find helpful information to help you determine which courthouse you should file at.</p>
+        <h3>Where should I file my case?</h3>
+        <p>Find helpful information to help you determine which court location you should file with.</p>
       </div>
     );
   }

@@ -18,7 +18,7 @@ export default class Menu extends Component {
             activeClassName='Menu-link--active'
             className='Menu-link'
             exact
-            to={ routeCodes.DASHBOARD }
+            to={ routeCodes.HOME }
           >
             Home
           </NavLink>

@@ -37,12 +37,12 @@ export default class Contact extends Component {
           </form>
         </div>
 
-        <p>
-          General Information
+        <div className="General-info">
+          <h3>General Information</h3>
           <li><a href='http://www.cc-courthelp.org/general/court-phone.aspx'>Phone Directory</a></li>
           <li><a href='http://www.cc-courthelp.org/locations/locations.aspx'>Court Locations</a></li>
           <li><a href='http://www.cc-courthelp.org/general/holidays.aspx'>Court Holiday Schedule</a></li>
-        </p>
+        </div>
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import Dashboard from 'views/Dashboard';
+import Home from 'views/Home';
 import Portal from 'views/Portal';
 import Forms from 'views/Forms';
 import Faqs from 'views/FAQs';
@@ -15,7 +15,7 @@ import Search from 'components/Global/Search'
 const publicPath = '/';
 
 export const routeCodes = {
-  DASHBOARD: publicPath,
+  HOME: publicPath,
   PORTAL: `${ publicPath }portal`,
   FORMS: `${ publicPath }forms`,
   FAQS: `${ publicPath }faqs`,
@@ -36,7 +36,7 @@ export default class App extends Component {
           <Search />
           <div className='Page'>
             <Switch>
-              <Route exact path={ publicPath } component={ Dashboard } />
+              <Route exact path={ publicPath } component={ Home } />
               <Route path={ routeCodes.PORTAL } component={ Portal } />
               <Route path={ routeCodes.FORMS } component={ Forms } />
               <Route path={ routeCodes.FAQS } component={ Faqs } />
