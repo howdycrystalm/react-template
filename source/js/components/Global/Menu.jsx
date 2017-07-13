@@ -25,9 +25,37 @@ export default class Menu extends Component {
           <NavLink
             activeClassName='Menu-link--active'
             className='Menu-link'
-            to={ routeCodes.ABOUT }
+            to={ routeCodes.PORTAL }
           >
-            About
+            MyPortal
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.FORMS }
+          >
+            Forms
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.FAQs }
+          >
+            FAQs
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.COURTHOUSE }
+          >
+            Find a Courthouse
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.CONTACT }
+          >
+            Contact
           </NavLink>
           <NavLink
             activeClassName='Menu-link--active'

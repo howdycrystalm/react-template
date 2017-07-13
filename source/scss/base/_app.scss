@@ -82,10 +82,8 @@ button:hover {
 }
 
 .Menu {
-  // position: fixed; mine
-  // align-items: center;
-  // border-bottom: 1px solid $grey-border;
-  // display: flex;
+  align-items: center;
+  display: flex;
   // justify-content: space-between;
   padding-bottom: 2rem;
   // margin: 0 auto 2rem; 
@@ -96,17 +94,17 @@ button:hover {
     // margin-left: 20rem;
     // margin: 0 0 2rem 20rem;
     position: fixed;
-    height: 100vh; //mine
+    height: 100vh; 
     padding-bottom: 0;
-    display: inline-block; //mine
-    width: 18rem; //mine
-    border-right: 1px solid $grey-border; //mine
+    display: inline-block; 
+    width: 18rem;
+    // border-right: 1px solid $grey-border; 
 
   }
 }
 
 .Menu img {
-  // display: block;
+  display: block;
 }
 
 .Menu-logo {
@@ -129,11 +127,11 @@ button:hover {
 }
 
 .Menu-links {
-  position: fixed; //mine
   @include md {
   }
 
   @include lg {
+    position: fixed; //mine
     padding: 6rem 0 4rem 0; //mine
   }
 }
@@ -162,10 +160,12 @@ button:hover {
 
 // Search --- mine
 .Search { 
-  position: fixed;
+  display: flex;
+  align-items: center;
   @include lg {
-      margin-left: 20rem;
-    }
+    position: fixed;
+    margin-left: 20rem;
+  }
 }
 
 .Search-bar {
@@ -176,8 +176,8 @@ button:hover {
 }
 
 .Page {
-  max-width: 60rem;
-  margin: 8rem auto 0 auto;
+  max-width: 70rem;
+  margin: 4rem auto 0 auto;
 
   @include lg {
     margin: 8rem 0 0 20rem;
