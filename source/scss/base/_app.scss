@@ -25,7 +25,7 @@ body {
 }
 
 .App {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 2rem;
 
   @include md {
@@ -48,11 +48,12 @@ a:hover {
 h1,
 h2,
 h3 {
+  font-family: $font-family-serif;
   margin: 2rem 0;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -133,7 +134,7 @@ button:hover {
   }
 
   @include lg {
-    padding: 4rem 0 4rem 0; //mine
+    padding: 6rem 0 4rem 0; //mine
   }
 }
 
@@ -161,21 +162,25 @@ button:hover {
 
 // Search --- mine
 .Search { 
+  position: fixed;
   @include lg {
       margin-left: 20rem;
     }
 }
 
 .Search-bar {
-  width: 20rem;
+  width: 40rem;
+  height: 3.3rem;
+  margin-right: 2rem;
+  padding-top: 0;
 }
 
 .Page {
   max-width: 60rem;
-  margin: 0 auto;
+  margin: 8rem auto 0 auto;
 
   @include lg {
-    margin: 0 0 0 20rem;
+    margin: 8rem 0 0 20rem;
   }
 }
 

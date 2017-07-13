@@ -50,7 +50,7 @@ export default class Dashboard extends Component {
 
     return (
       <div className='Dashboard'>
-        <h1>CCC Self Help Site</h1>
+        <h1>Self Help Law Center</h1>
         <p>
           Boilerplate for building React components with Redux.
         </p>
