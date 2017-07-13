@@ -1,6 +1,6 @@
 # SHL React Template
 
-This is a React starter for CCC SHL. 
+This is a master repo for CCC SHL frontend. 
 
 React and Redux, Webpack 2 boilerplate from [Work & Co](https://work.co). To learn more about what features it has built in, check out their extremely well-documented [repo](https://github.com/workco/marvin).
 
