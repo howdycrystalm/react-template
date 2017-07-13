@@ -39,7 +39,7 @@ export default class Menu extends Component {
           <NavLink
             activeClassName='Menu-link--active'
             className='Menu-link'
-            to={ routeCodes.FAQs }
+            to={ routeCodes.FAQS }
           >
             FAQs
           </NavLink>
