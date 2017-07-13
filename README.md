@@ -1,4 +1,4 @@
-# SHL React Template ★★
+# SHL React Template
 
 This is a React starter for CCC SHL. 
 
