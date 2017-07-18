@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { testAction, testAsync } from 'actions/app';
 import Icon from 'components/Global/Icon';
 import bookImg from '../../../assets/img/book2.jpg';
-import Box from 'components/Global/Box'
+import SquareBox from 'components/Global/SquareBox'
 import BannerBox from 'components/Global/BannerBox'
 import InfoBox from 'components/Global/InfoBox'
 
@@ -23,8 +23,20 @@ export default class Home extends Component {
         <BannerBox boxTitle='Do I need a lawyer?'
              boxContent='Learn more about representing yourself in court, and explore frequently asked questions.'
              buttonText='FAQs'/>
-        <Box boxTitle='Small Claims'
-             imgSrc='../assets/icons/guardianship.svg' /> 
+        <div className='grid grid-pad'>
+          <SquareBox boxTitle='Small Claims'
+               imgSrc='../assets/icons/smallclaims.svg' /> 
+          <SquareBox boxTitle='Eviction'
+               imgSrc='../assets/icons/eviction.svg' /> 
+          <SquareBox boxTitle='Traffic'
+               imgSrc='../assets/icons/traffic.svg' /> 
+          <SquareBox boxTitle='Domestic Violence'
+               imgSrc='../assets/icons/dv.svg' /> 
+          <SquareBox boxTitle='Family Law'
+               imgSrc='../assets/icons/family.svg' /> 
+          <SquareBox boxTitle='Guardianship'
+               imgSrc='../assets/icons/guardianship.svg' /> 
+        </div>
         <InfoBox boxTitle='FAQs'
              boxContent='[list of 5 FAQs]'
              buttonText='View'/>
@@ -34,9 +46,8 @@ export default class Home extends Component {
   }
 }
 
-/// going to want to iterate over the <Box /> component and fill it with the different categories and their links
+/// going to want to iterate over the <SquareBox /> component and fill it with the different categories and their links
 /// reference Knock for iteration template... 
-/// Box needs to have css so it displays in a grid
 
 
 
