@@ -6,8 +6,8 @@ $grey-text: #aaa;
 $black: #000;
 $white: #fff;
 $grey-button: #606060;
-$banner-box: #f9d04e;
-$light-grey: #f5f5f5;
+$banner-box: #a5a5a5;
+$list-box: #f5f5f5;
 
 html {
   font-size: 10px;
@@ -186,11 +186,33 @@ button:hover {
   }
 }
 
-.Banner-box {
-  background-color: $banner-box;
-  padding: 1rem 3rem 1rem 3rem;
+.Box {
+  padding: 2rem;
+  display: inline-block;
+  background-color: $list-box;
+  margin: 1rem 0 1rem 0;
+  width: 50%;
+  h2, h3 {
+    margin: 0;
+  }
+
+  @include md {
+    width: 33%;
+  } 
+
 }
 
+
+.Banner-box {
+  background-color: $banner-box;
+  width: 100%;
+
+}
+
+.Info-box {
+  display: block;
+  width: 100%
+}
 
 .Example {
   background: #F6F8FA;
@@ -218,5 +240,5 @@ button:hover {
 hr {
   border: 0;
   border-top: 1px solid $black;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }

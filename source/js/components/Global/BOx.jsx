@@ -14,4 +14,4 @@ export default class Box extends Component {
 } 
 
 // how to manage icons? 
-// <Icon />{this.props.glyph}
+// <Icon />{this.props.glyph} 
