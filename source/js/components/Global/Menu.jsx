@@ -27,7 +27,7 @@ export default class Menu extends Component {
             className='Menu-link'
             to={ routeCodes.PORTAL }
           >
-            MyPortal
+            My Portal
           </NavLink>
           <NavLink
             activeClassName='Menu-link--active'
