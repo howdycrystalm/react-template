@@ -89,6 +89,22 @@ button:hover {
 // ==========================
 // ==== nav and searchbar ===
 // ==========================
+.App-mask {
+  display: none;
+  position: relative;
+  // height: 0;
+  // width: 0;
+
+  @include lg {
+    background-color: $white;
+    display: block;
+    position: fixed;
+    margin: -4rem;
+    height: 8.5rem;
+    width: 100%;
+  }
+}
+
 .Menu {
   align-items: center;
   display: flex;
@@ -157,11 +173,13 @@ button:hover {
 
 .Search { 
   align-items: center;
+  background-color: $white;
   display: flex;
   @include lg {
     margin-left: 20rem;
     position: fixed;
   }
+  width: 100%;
 }
 
 .Search-bar {
