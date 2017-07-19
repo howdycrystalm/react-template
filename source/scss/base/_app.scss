@@ -211,9 +211,12 @@ button:hover {
 }
 
 .Square-box {
+  // border-top: 3px solid $blue-accent;
   padding: 0;
   text-align: center;
   width: 100%;
+
+  position: relative;
 
   @include sm {
     width: 50%;
@@ -223,6 +226,23 @@ button:hover {
     width: 33%;
   }
 }
+
+.Square-box:after {
+  content:""; 
+  background: $blue-accent; 
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  width: 92.5%; 
+  height: 3px;
+
+  @include sm {
+  }
+
+  @include md {
+  }
+}
+
 
 .Banner-box {
   background-color: $yellow-highlight;
