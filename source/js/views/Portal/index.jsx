@@ -4,7 +4,7 @@ export default class Portal extends Component {
   render() {
     return (
       <div className='Portal'>
-        <h1>MyPortal</h1>
+        <h1>My Portal</h1>
       </div>
     );
   }

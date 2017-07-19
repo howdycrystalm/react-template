@@ -32,6 +32,7 @@ export default class App extends Component {
     return (
       <BrowserRouter>
         <div className='App'>
+          <div className='App-mask'></div>
           <Menu />
           <Search />
           <div className='Page'>
