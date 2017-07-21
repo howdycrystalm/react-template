@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SquareBox from '../../components/Global/SquareBox';
 
 export default class Portal extends Component {
   render() {

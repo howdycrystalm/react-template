@@ -2,14 +2,20 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 import ccscLogo from '../../../assets/img/ccsc-logo.svg';
+import ccscLogoSm from '../../../assets/img/CCSC-Logo-sm.svg';
+
 
 export default class Menu extends Component {
   render() {
     return (
       <div className='Menu'>
         <div className='Menu-logo'>
-          <img
+          <img className="Menu-logo-img"
             src={ ccscLogo }
+            alt='Contra Costa Superior Courts logo'
+          />
+          <img className="Menu-logo-img-sm"
+            src={ ccscLogoSm }
             alt='Contra Costa Superior Courts logo'
           />
         </div>
