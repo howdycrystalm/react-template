@@ -5,6 +5,7 @@ export default class SquareBox extends Component {
 	render() {
 		return (
 			<div className="Box Square-box col-2">
+				<a href={this.props.boxLink} >
 				<div className="Square-box-static module">
 					<div className="Square-box-static-main">
 						<h3>{this.props.boxTitle}</h3>
@@ -14,6 +15,7 @@ export default class SquareBox extends Component {
 						<p>{this.props.boxContent}</p>
 					</div>
 				</div>
+				</a>
 			</div>
 			)
 	}
