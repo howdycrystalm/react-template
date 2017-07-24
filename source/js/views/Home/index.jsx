@@ -30,7 +30,7 @@ export default class Home extends Component {
         <div className='grid grid-pad'>
           <SquareBox boxTitle='Small Claims'
                imgSrc='../assets/icons/smallclaims.svg'
-               boxContent='Filing a Small Claim<br />Change Your Claim<br />Pre-trial Checklist<br />Collecting a Judgement' /> 
+               boxContent='Filing a Small Claim' /> 
           <SquareBox boxTitle='Eviction'
                imgSrc='../assets/icons/eviction.svg' /> 
           <SquareBox boxTitle='Traffic'
@@ -53,6 +53,8 @@ export default class Home extends Component {
 
 /// going to want to iterate over the <SquareBox /> component and fill it with the different categories and their links
 /// reference Knock for iteration template... 
+/// how to display links for square-box on hover?
+
 
 
 
