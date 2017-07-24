@@ -8,7 +8,7 @@ export default class BannerBox extends Component {
 				<h2>{this.props.boxTitle}</h2>
 				<hr />
 				<p>{this.props.boxContent}</p>
-				<button>{this.props.buttonText}</button>
+				<a href={this.props.buttonLink}><button>{this.props.buttonText}</button></a>
 			</div>
 			)
 	}

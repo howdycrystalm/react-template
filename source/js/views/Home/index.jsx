@@ -7,6 +7,8 @@ import bookImg from '../../../assets/img/book2.jpg';
 import SquareBox from 'components/Global/SquareBox'
 import BannerBox from 'components/Global/BannerBox'
 import InfoBox from 'components/Global/InfoBox'
+import { routeCodes } from '../../views/App';
+
 
 export default class Home extends Component {
   static propTypes = {
@@ -22,10 +24,13 @@ export default class Home extends Component {
         <h1>Self Help Law Center</h1>
         <BannerBox boxTitle='Do I need a lawyer?'
              boxContent='Learn more about representing yourself in court, and explore frequently asked questions.'
-             buttonText='FAQs'/>
+             buttonText='FAQs'
+             buttonLink={ routeCodes.FAQs }
+        />
         <div className='grid grid-pad'>
           <SquareBox boxTitle='Small Claims'
-               imgSrc='../assets/icons/smallclaims.svg' /> 
+               imgSrc='../assets/icons/smallclaims.svg'
+               boxContent='Filing a Small Claim' /> 
           <SquareBox boxTitle='Eviction'
                imgSrc='../assets/icons/eviction.svg' /> 
           <SquareBox boxTitle='Traffic'
@@ -48,6 +53,8 @@ export default class Home extends Component {
 
 /// going to want to iterate over the <SquareBox /> component and fill it with the different categories and their links
 /// reference Knock for iteration template... 
+/// how to display links for square-box on hover?
+
 
 
 

@@ -92,8 +92,6 @@ button:hover {
 .App-mask {
   display: none;
   position: relative;
-  // height: 0;
-  // width: 0;
 
   @include lg {
     background-color: $white;
@@ -102,6 +100,7 @@ button:hover {
     margin: -4rem;
     height: 8.5rem;
     width: 100%;
+    z-index: 100;
   }
 }
 
@@ -110,6 +109,7 @@ button:hover {
   display: flex;
   margin-top: 2rem;
   padding-bottom: 2rem;
+  z-index: 1000;
 
   @include lg {
     position: fixed;
@@ -120,13 +120,12 @@ button:hover {
   }
 }
 
-.Menu img {
-  display: block;
-}
-
 .Menu-logo {
   margin-right: 2rem;
   width: 6rem;
+  .Menu-logo-img {
+    display: none;
+  }
 
   @include lg {
     left: 0;
@@ -134,10 +133,13 @@ button:hover {
     position: fixed;
     top: 0;
     width: 19rem;
-  }
 
-  @include md {
-  //  width: 22rem; // i'm overwriting a breakpoint rule with this...
+    .Menu-logo-img-sm {
+      display: none
+    }
+    .Menu-logo-img {
+    display: block;
+    }
   }
 }
 
@@ -180,6 +182,7 @@ button:hover {
     position: fixed;
   }
   width: 100%;
+  z-index: 1000;
 }
 
 .Search-bar {
@@ -208,6 +211,7 @@ button:hover {
   display: inline-block;
   margin: 1rem 0 1rem 0; 
   padding: 2rem;
+  z-index: 1;
 }
 
 .Square-box {
@@ -215,12 +219,38 @@ button:hover {
   text-align: center;
   width: 100%;
 
+  position: relative;
+
   @include sm {
     width: 50%;
   }
 
   @include md {
     width: 33%;
+  }
+}
+
+.Square-box-static {
+  background: $grey-background;
+  border-top: 4px solid $blue-accent;
+  .Square-box-static-links {
+    display: none;
+  }
+}
+
+.Square-box-static:hover {
+  background: $blue-accent;
+  border-top: 4px solid $blue-accent;
+  .Square-box-static-main {
+    display: hidden;
+  }
+  .Square-box-static-links {
+    display: block;
+  }
+}
+
+.Square-box:after {
+  @include sm {
   }
 }
 
@@ -317,7 +347,6 @@ hr {
 
 .module {
   padding: 2rem;
-  background: $grey-background;
 }
 
 .grid-pad {
