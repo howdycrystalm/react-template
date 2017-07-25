@@ -215,6 +215,9 @@ button:hover {
 }
 
 .Square-box {
+  h3 {
+    padding-top: 2rem;
+  }
   padding: 0;
   text-align: center;
   width: 100%;
@@ -242,10 +245,10 @@ button:hover {
   background: $blue-accent;
   border-top: 4px solid $blue-accent;
   .Square-box-static-main {
-    display: hidden;
+    // display: hidden;
   }
   .Square-box-static-links {
-    display: block;
+    // display: block;
   }
 }
 
@@ -346,7 +349,7 @@ hr {
 }
 
 .module {
-  padding: 2rem;
+  // padding: 2rem;
 }
 
 .grid-pad {

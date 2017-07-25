@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import SquareBox from '../../components/Global/SquareBox';
+import { Link } from 'react-router-dom';
+import { routeCodes } from '../../views/App';
 
 export default class Portal extends Component {
   render() {
@@ -8,6 +10,7 @@ export default class Portal extends Component {
         <h1>My Portal</h1>
         <SquareBox boxTitle='Log in / Sign up'
         		   imgSrc='../assets/icons/profile.svg'
+               boxLink="/login"
         />
         <SquareBox boxTitle='Find a Court Case'
         		   imgSrc='../assets/icons/search.svg'
