@@ -5,21 +5,24 @@ import facebook from '../../../assets/icons/facebook.svg';
 import google from '../../../assets/icons/google.svg';
 import twitter from '../../../assets/icons/twitter.svg';
 
-export default class Login extends Component {
+export default class Signup extends Component {
 	render() {
 	return (
-		<div className='Login'>
-			<h1>Login</h1>
+		<div className='Signup'>
+			<h1>Signup</h1>
 
-			<div className="Form Form-login">
-				<form action="/login" method="post">
+			<div className="Form Form-signup">
+				<form action="/signup" method="post">
 					<div className="form-group">
 						<input type="text" className="form-control" name="email" placeholder="Email" />
 					</div>
 					<div className="form-group">
+						<input type="text" className="form-control" name="phone" placeholder="Phone" />
+					</div>
+					<div className="form-group">
 						<input type="password" className="form-control" name="password" placeholder="Password" />
 					</div>
-					<button type="submit" id="login-btn" className="button">Log In</button>
+					<button type="submit" id="login-btn" className="button">Sign Up</button>
 				</form>
 			</div>
 
@@ -30,8 +33,8 @@ export default class Login extends Component {
 			</div>
 
 			<div className="wrapper">
-				<p className="wrapper">Don't have an account?</p>
-				<a href="/signup" className="login-btn-link"><div className="button">Sign up</div></a>
+				<p className="wrapper">Already have an account?</p>
+				<a href="/signup" className="login-btn-link"><div className="button">Log In</div></a>
 			</div>
 
 		</div>

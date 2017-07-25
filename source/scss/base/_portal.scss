@@ -14,8 +14,19 @@ $grey-background: #f5f5f5;
 
 // Login Page
 .form-group {
-	padding: 4rem; 
+	padding-bottom: 1.5rem; 
 }
-.form-control {
-	margin: 4rem;
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+
+.oAuth-group {
+	padding-top: 2rem;
+}
+
+.oAuth-group-icon {
+	display: block;
+	height: 3rem;
+	margin-bottom: 1rem;
 }

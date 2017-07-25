@@ -9,6 +9,7 @@ import Faqs from 'views/FAQs';
 import Courthouse from 'views/Courthouse';
 import Contact from 'views/Contact';
 import Login from 'views/Login';
+import Signup from 'views/Signup';
 import NotFound from 'views/NotFound';
 import Menu from 'components/Global/Menu';
 import Search from 'components/Global/Search'
@@ -22,7 +23,8 @@ export const routeCodes = {
   FAQS: `${ publicPath }faqs`,
   COURTHOUSE: `${ publicPath }courthouse`,
   CONTACT: `${ publicPath }contact`,
-  LOGIN: `${ publicPath }login`
+  LOGIN: `${ publicPath }login`,
+  SIGNUP: `${ publicPath }signup`
 };
 
 export default class App extends Component {
@@ -46,6 +48,7 @@ export default class App extends Component {
               <Route path={ routeCodes.COURTHOUSE } component={ Courthouse } />
               <Route path={ routeCodes.CONTACT } component={ Contact } />
               <Route path={ routeCodes.LOGIN } component={ Login } />
+              <Route path={ routeCodes.SIGNUP } component={ Signup } />
               <Route path='*' component={ NotFound } />
             </Switch>
           </div>
