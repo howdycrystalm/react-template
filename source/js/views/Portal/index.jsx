@@ -10,7 +10,7 @@ export default class Portal extends Component {
         <h1>My Portal</h1>
         <SquareBox boxTitle='Log in / Sign up'
         		   imgSrc='../assets/icons/profile.svg'
-               url={ routeCodes.LOGIN }
+               boxLink="/login"
         />
         <SquareBox boxTitle='Find a Court Case'
         		   imgSrc='../assets/icons/search.svg'
