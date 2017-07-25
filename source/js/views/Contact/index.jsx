@@ -6,18 +6,18 @@ export default class Contact extends Component {
       <div className='Contact'>
         <h1>Contact</h1>
 
-        <div className='Contact-form'>
+        <div className='Form Form-contact'>
           <form id='contactForm'>
-            <div id='nameGroup'>
-              <label>* Name</label>
+            <div id='nameGroup' className='form-group'>
+              <label className='form-group-label'>* Name</label>
               <input id='fullname' placeholder='Enter your first and last name' />
             </div>
-            <div id='emailGroup'>
-              <label>* Email</label>
+            <div id='emailGroup' className='form-group'>
+              <label className='form-group-label'>* Email</label>
               <input id='email' placeholder='Enter your email address' />
             </div>
-            <div id='departmentGroup'>
-              <label>* Department / Category</label>
+            <div id='departmentGroup' className='form-group'>
+              <label className='form-group-label'>* Department / Category</label>
               <select id='department'>
                 <option value='feedback'>General Feedback / Suggestions</option>
                 <option value='jury'>Jury Service-Related Questions</option>
@@ -28,11 +28,11 @@ export default class Contact extends Component {
                 <option value='court-info'>Other</option>
               </select>
             </div>
-            <div id='commentsGroup'>
-              <label>* Comments</label>
+            <div id='commentsGroup' className='form-group'>
+              <label className='form-group-label'>* Comments</label>
               <textarea id='comments' placeholder='Enter your message here...'></textarea>
             </div>
-            <div id='required'>*Required fields</div>
+            <div id='required' className='form-group'>*Required fields</div>
             <button id="submitContactForm">Submit</button>
           </form>
         </div>
